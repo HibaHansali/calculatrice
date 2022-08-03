@@ -7,12 +7,17 @@ void main() {
     char op;
 
    printf ("Entrer le nombre1: ");
-    scanf("%d" , &N1);
+    scanf("%d", &N1);
     printf ("Entrer l'opérareur: ");
-    scanf("%s" , &op);
+    scanf("%s", &op);
+    if(op=='q'){
+        printf("operation arrete");
+        exit(0);
+    }
+    else{
     printf ("Entrer le nombre2: "); 
-    scanf("%d" , &N2);
-
+    scanf("%d", &N2);
+    }
      switch(op){
      case '+': printf ("%d\n ", N1+N2);
      break;
@@ -28,5 +33,6 @@ void main() {
     default:
      printf("opération non reconnu");
     break;
+    
 }
 }
